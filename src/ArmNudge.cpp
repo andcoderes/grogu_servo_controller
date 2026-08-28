@@ -22,7 +22,7 @@ static const Joint kJoints[] = {
     {"4", 1000, 2400},  // 0: right shoulder
     {"6", 900,  1700},  // 1: right elbow
     {"3", 700,  2200},  // 2: left shoulder
-    {"5", 1400, 2200},  // 3: left elbow
+    {"5", 1400, 2100},  // 3: left elbow (bounds from SETUP_DATA_0's rSVPin,5)
 };
 constexpr int kJointCount = sizeof(kJoints) / sizeof(kJoints[0]);
 
@@ -35,12 +35,12 @@ struct ButtonMap {
 static const ButtonMap kButtonMap[] = {
     /* Y         */ {0, +1},  // right shoulder, up
     /* A         */ {0, -1},  // right shoulder, down
-    /* X         */ {1, -1},  // right elbow, in
-    /* B         */ {1, +1},  // right elbow, out
+    /* X         */ {1, +1},  // right elbow, out (inverted)
+    /* B         */ {1, -1},  // right elbow, in  (inverted)
     /* DpadUp    */ {2, -1},  // left shoulder, up
     /* DpadDown  */ {2, +1},  // left shoulder, down
-    /* DpadLeft  */ {3, +1},  // left elbow, in
-    /* DpadRight */ {3, -1},  // left elbow, out
+    /* DpadLeft  */ {3, -1},  // left elbow, out (inverted)
+    /* DpadRight */ {3, +1},  // left elbow, in  (inverted)
 };
 
 // Matches the original click-nudge rate (100 PWM / 200ms).

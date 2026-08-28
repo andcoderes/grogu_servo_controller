@@ -21,7 +21,7 @@ struct ServoNeutral {
 // (rSVPin min/max) -- re-check both if servos are re-registered with
 // different bounds in a future Studio export.
 static const ServoNeutral kAllServos[] = {
-    {"5", 1400, 2200, 2055, true},   // left elbow
+    {"5", 1400, 2100, 1960, true},   // left elbow
     {"6", 900,  1700, 900,  true},   // right elbow
     {"1", 850,  2000, 1310, false},  // right head pivot
     {"2", 1000, 2000, 1600, false},  // left head pivot

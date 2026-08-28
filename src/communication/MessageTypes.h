@@ -23,12 +23,12 @@ enum class EventMsgType : uint8_t {
 enum class NudgeButton : int16_t {
     Y         = 0,  // right shoulder, up
     A         = 1,  // right shoulder, down
-    X         = 2,  // right elbow, in
-    B         = 3,  // right elbow, out
+    X         = 2,  // right elbow, out
+    B         = 3,  // right elbow, in
     DpadUp    = 4,  // left shoulder, up
     DpadDown  = 5,  // left shoulder, down
-    DpadLeft  = 6,  // left elbow, in
-    DpadRight = 7,  // left elbow, out
+    DpadLeft  = 6,  // left elbow, out
+    DpadRight = 7,  // left elbow, in
 };
 
 struct __attribute__((packed)) EventPacket {
