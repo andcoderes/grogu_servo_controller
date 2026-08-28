@@ -8,3 +8,7 @@
 # Secrets — generated from .env at build time, never commit either
 .env
 include/secrets.h
+
+# 3D model assets referenced by grogu.btngo (models\*.obj) — keep locally,
+# too large to commit; drop the .obj/.mtl files here to open the project
+models/

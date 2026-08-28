@@ -13,7 +13,7 @@
         "mediaPath": {
           "$id": "4",
           "$type": "MediaPath, Assembly-CSharp",
-          "path": "C:\\Users\\jaima\\Downloads\\Project Gogurt - Revision 3\\obj\\body_base.obj",
+          "path": "models\\body_base.obj",
           "local": false,
           "assetBundlePath": null,
           "IsStreamingAsset": false
@@ -62,7 +62,7 @@
         "mediaPath": {
           "$id": "13",
           "$type": "MediaPath, Assembly-CSharp",
-          "path": "C:\\Users\\jaima\\Downloads\\Project Gogurt - Revision 3\\obj\\Split Wrist Joint - Upper.obj",
+          "path": "models\\Split Wrist Joint - Upper.obj",
           "local": false,
           "assetBundlePath": null,
           "IsStreamingAsset": false
@@ -111,7 +111,7 @@
         "mediaPath": {
           "$id": "22",
           "$type": "MediaPath, Assembly-CSharp",
-          "path": "C:\\Users\\jaima\\Downloads\\Project Gogurt - Revision 3\\obj\\Servo Bicep V2.obj",
+          "path": "models\\Servo Bicep V2.obj",
           "local": false,
           "assetBundlePath": null,
           "IsStreamingAsset": false
@@ -160,7 +160,7 @@
         "mediaPath": {
           "$id": "31",
           "$type": "MediaPath, Assembly-CSharp",
-          "path": "C:\\Users\\jaima\\Downloads\\Project Gogurt - Revision 3\\obj\\Head Plug For Sonic Mount.obj",
+          "path": "models\\Head Plug For Sonic Mount.obj",
           "local": false,
           "assetBundlePath": null,
           "IsStreamingAsset": false
@@ -209,7 +209,7 @@
         "mediaPath": {
           "$id": "40",
           "$type": "MediaPath, Assembly-CSharp",
-          "path": "C:\\Users\\jaima\\Downloads\\Project Gogurt - Revision 3\\obj\\Head Tilt Servo Mount.obj",
+          "path": "models\\Head Tilt Servo Mount.obj",
           "local": false,
           "assetBundlePath": null,
           "IsStreamingAsset": false
@@ -258,7 +258,7 @@
         "mediaPath": {
           "$id": "49",
           "$type": "MediaPath, Assembly-CSharp",
-          "path": "C:\\Users\\jaima\\Downloads\\Project Gogurt - Revision 3\\obj\\Middle Servo Plate.obj",
+          "path": "models\\Middle Servo Plate.obj",
           "local": false,
           "assetBundlePath": null,
           "IsStreamingAsset": false
