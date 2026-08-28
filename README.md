@@ -9,7 +9,7 @@ own code exports hardcode (`#include "src/CommandStream.h"` etc.); see
 "Updating animations from Bottango Studio" below.
 
 > New to the project? [project_overview.md](project_overview.md) explains
-> how this repo, `grogu_mcu_receiver`, and `droid_phone_controller` fit
+> how this repo, `grogu_mcu_receiver`, and `Droid_Phone_Controller` fit
 > together and the order to bring them up.
 
 **Two independent things, on two independent transports:**

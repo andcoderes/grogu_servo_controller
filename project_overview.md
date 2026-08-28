@@ -7,12 +7,12 @@ system:
 |------|------|----------|
 | **grogu_servo_controller** (this repo) | Bottango firmware for the servo/animatronic board — head, arms, authored animations | [Bottango Impulse](https://www.bottango.com/pages/bottango-controls-lineup) (ESP32, 10 servo headers) |
 | [**grogu_mcu_receiver**](https://github.com/andcoderes/grogu_mcu_receiver) | BLE receiver + drive wheels; bridges phone commands to this board over ESP-NOW | Seeed XIAO ESP32-C6 |
-| [**droid_phone_controller**](https://github.com/andcoderes/droid_phone_controller) | Android app — macro buttons that trigger animations and sounds | Phone |
+| [**Droid_Phone_Controller**](https://github.com/andcoderes/Droid_Phone_Controller) | Android app — macro buttons that trigger animations and sounds | Phone |
 
 ## How the pieces talk
 
 ```
-droid_phone_controller  --BLE-->  grogu_mcu_receiver  --ESP-NOW-->  grogu_servo_controller
+Droid_Phone_Controller  --BLE-->  grogu_mcu_receiver  --ESP-NOW-->  grogu_servo_controller
       (macro button)                 (drive + bridge)                (play animation index)
 ```
 
@@ -47,7 +47,7 @@ one needs:
    rebuild/reflash the receiver. Both boards now have each other's MAC and
    the ESP-NOW link comes up.
 
-5. **Build & install `droid_phone_controller`** onto the phone, pair with
+5. **Build & install `Droid_Phone_Controller`** onto the phone, pair with
    the receiver over BLE.
 
 6. **Author animations in Bottango Studio.** Open `grogu.btngo` — see
