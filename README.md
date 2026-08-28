@@ -8,6 +8,10 @@ Impulse](https://www.bottango.com/pages/bottango-controls-lineup) (ESP32,
 own code exports hardcode (`#include "src/CommandStream.h"` etc.); see
 "Updating animations from Bottango Studio" below.
 
+> New to the project? [project_overview.md](project_overview.md) explains
+> how this repo, `grogu_mcu_receiver`, and `droid_phone_controller` fit
+> together and the order to bring them up.
+
 **Two independent things, on two independent transports:**
 - **ESP-NOW** (always on) carries grogu's own custom trigger link from
   `receiver` — a macro-button press in the DroidController phone app
