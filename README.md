@@ -120,6 +120,7 @@ src/
     [...]                          Everything else copied as-is from Bottango's official repo
 scripts/
   load_secrets.py                  Pre-build script: .env -> include/secrets.h
+grogu.btngo                        Bottango Studio project (servo rig + animations); models\*.obj paths are relative -- see bottango_setup.md
 .env.example                       Template for ESP-NOW keys + receiver's MAC -- copy to .env
 platformio.ini
 LICENSE, ThirdPartyLicenses/       From the vendored Bottango driver (BSD-3-Clause)
@@ -161,7 +162,10 @@ LICENSE, ThirdPartyLicenses/       From the vendored Bottango driver (BSD-3-Clau
    in Live mode by default (see above). To play triggered animations with
    no PC connected, switch the board to Export mode from Desktop's UI
    once, and re-export/drop in `GeneratedCodeAnimations.h`/`.cpp` whenever
-   animations change (see "Updating animations" above).
+   animations change (see "Updating animations" above). To author against
+   the 3D body model in Bottango Studio, open `grogu.btngo` -- see
+   [bottango_setup.md](bottango_setup.md) for converting the Project Gogurt
+   STL parts to OBJ and where to put them.
 
 ## Generating ESP-NOW keys
 
