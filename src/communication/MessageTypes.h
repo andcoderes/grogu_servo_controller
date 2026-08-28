@@ -42,5 +42,5 @@ struct __attribute__((packed)) EventPacket {
 
 // Documentation only -- real bounds check uses getAnimationCount() at
 // runtime. Current index key (see GeneratedCodeAnimations.cpp): 0=idle,
-// 1=No, 2=yes, 3=the force, 4=grab me, 5=Food.
-#define MOTOR_CONTROLLER_EVENT_COUNT 6
+// 1=No, 2=yes, 3=the force, 4=grab me, 5=eating, 6="6 7".
+#define MOTOR_CONTROLLER_EVENT_COUNT 7

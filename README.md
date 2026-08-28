@@ -68,7 +68,7 @@ send. Re-exporting in a different order changes what each button plays.
 
 `src/GeneratedCodeAnimations.h`/`.cpp` are a real **Code Command Stream**
 export from Bottango Studio (Export > Code, in the desktop app), not
-hand-written. Current export has 6 animations:
+hand-written. Current export has 7 animations:
 
 | Index | Name           |
 |-------|----------------|
@@ -77,11 +77,13 @@ hand-written. Current export has 6 animations:
 | 2     | yes            |
 | 3     | the force      |
 | 4     | grab me        |
-| 5     | Food           |
+| 5     | eating         |
+| 6     | `6 7` (placeholder — unnamed in Studio) |
 
 **The event id the phone app sends *is* this index directly** — button "No"
-= send `2`. Wired up in `C1-1OP/DroidController/grogu/src/main/res/raw/audio_grogu.json`
-(one entry per row above, plus a reserved `"999"` = STOP). Re-check this
+= send `1`. Wired up in `Droid_Phone_Controller`'s
+`grogu/src/main/res/raw/audio_grogu.json` (one entry per row above, plus a
+reserved `"999"` = STOP). Re-check this
 table (also printed as a comment at the top of the real
 `GeneratedCodeAnimations.cpp`) any time you re-export, since
 re-ordering/adding/removing animations in Studio changes what each index
