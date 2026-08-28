@@ -1,0 +1,65 @@
+#ifndef AbstractEffector_h
+#define AbstractEffector_h
+
+#include <Arduino.h>
+#include "Curve.h"
+#include "Time.h"
+#include "../BottangoArduinoCallbacks.h"
+#include "../BottangoArduinoConfig.h"
+
+class AbstractEffector
+{
+public:
+    AbstractEffector(int minSignal, int maxSignal);
+
+    virtual void stop();
+
+    bool respondsToIdentifier(char *identifier);
+
+    virtual void getIdentifier(char *outArray, short arraySize) = 0;
+
+    virtual void setSync(int syncValue);
+
+    virtual void setAutoSync(int syncValue);
+
+    virtual void setHome();
+
+    virtual void resetHome();
+
+    virtual void addCurve(Curve *curve);
+
+    virtual void clearCurves();
+
+    virtual void updateSignalBounds(int minSignal, int maxSignal, int signalSpeed);
+
+    virtual void updateOnLoop();
+
+    virtual void driveOnLoop();
+
+    virtual void callbackOnDriveComplete(int currentSignal, bool didChange);
+
+    virtual bool useFloatCurve();
+
+    // grogu addition: expose the effector's currently-driven signal (raw
+    // PWM/whatever units minSignal/maxSignal are in) so custom code can
+    // ramp from wherever it actually is. Default falls back to minSignal;
+    // LoopDrivenEffector overrides with the real tracked value.
+    virtual int getCurrentSignal() { return minSignal; }
+
+    virtual void destroy(bool systemShutdown);
+
+    virtual ~AbstractEffector();
+
+protected:
+    int lerpSignal(float movement);
+
+    int minSignal = 0;
+
+    int maxSignal = 0;
+
+    Curve *curves[MAX_NUM_CURVES]{};
+
+    byte curvesIdx = 0;
+};
+
+#endif
